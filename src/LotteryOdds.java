@@ -1,9 +1,9 @@
-import java.math.BigInteger;
+
 
 public class LotteryOdds {
 
 	public static void main(String[] args) {
-
+		
 		int r;
 		int w = 10; // 69
 		int s = 2; // 5
