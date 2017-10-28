@@ -8,7 +8,7 @@ public class LotteryOdds {
 		int w = 10; // 69
 		int s = 5; // 5
 		int pb = 26;
-	    r = factorial(w) / ( factorial(s) * ( factorial(w-s)));  // Superduper magic equation!!
+	    r = addBigInteger(w) / ( addBigInteger(s) * ( addBigInteger(w-s)));  // Superduper magic equation!!
 	    r = r * pb;
 	   
 	    System.out.println("The odds of winning the PowerBall are 1:" + r);
@@ -16,7 +16,7 @@ public class LotteryOdds {
 	    
     }
 
-	private static Integer factorial(int n) {
+	private static int addBigInteger(int n) {
 	    int i = 1;
 	    int f = 1;
 	  
@@ -25,5 +25,5 @@ public class LotteryOdds {
 	    }
 
 		return f;
-	}
+	
 }
