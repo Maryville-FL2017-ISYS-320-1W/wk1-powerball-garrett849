@@ -4,16 +4,19 @@ public class LotteryOdds {
 
 	public static void main(String[] args) {
 
-		BigInteger answer;
-		BigInteger poolofwhiteballs = new BigInteger("69"); // 69
-		BigInteger pickedwhiteballs = new BigInteger("5"); // 5
-		BigInteger powerballs = new BigInteger("26");
-	    BigInteger answer = factorial(poolofwhiteballs.divide(factorial(pickedwhiteballs.mulitipy(factorial(poolofwhiteballs.subtract(pickedwhiteballs)));  // Superduper magic equation!!
-	    BigInteger answer = answer.mulitipy(powerballs);
-	  	System.out.println("The odds of winning the PowerBall are 1:" + answer)
-	    System.out.println("The PowerBall website says that it's 1:292201338");    
+		BigInteger r;
+		BigInteger w = new BigInteger("69"); // 69
+		BigInteger s = new BigInteger("5"); // 5
+		BigInteger pb = new BigInteger("26");
+	    r = factorial(w).divide (factorial(s).multiply (factorial(w.subtract(s))));  // Superduper magic equation!!
+	    r = r * pb;
+	    
+	    System.out.println("The odds of winning the PowerBall are 1:" + r);
+	    System.out.println("The PowerBall website says that it's 1:292201338");
+	    
     }
-	private static Integer factorial(int n)  {
+
+	private static Integer factorial(BigInteger w) {
 	    int i = 1;
 	    int f = 1;
 	 
