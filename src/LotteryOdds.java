@@ -19,8 +19,8 @@ public class LotteryOdds {
 	private static BigInteger factorial(int n) {
 	    long i = 1;
 	    BigInteger f = new BigInteger("1");
-	    for (int c = 1; c <= n; c++) {
-	      f = f.multiply(BigInteger.valueOf (i));
+	    for (int i1 = 1; i1 <= n; i1++) {
+	      f = f.multiply(BigInteger.valueOf(i1));
 	    }
 
 		return f;
